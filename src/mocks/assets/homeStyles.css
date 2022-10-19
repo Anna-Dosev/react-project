@@ -1,0 +1,44 @@
+.home-text-container {
+  margin-left: 50px;
+  margin-top: 150px;
+  max-width: 45%;
+}
+
+.home-screen {
+  display: flex;
+  flex-direction: row;
+}
+
+.benchmark {
+  margin: 10px 15px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.home-btns {
+  border: lavender 3px solid;
+  background-color: rgb(88, 92, 155);
+  border-radius: 50px;
+  color: white;
+  padding: 20px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.sample-text {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  padding: 0 20px;
+  max-width: 35%;
+  border: 6px solid rgb(88, 92, 155);
+  border-radius: 20px;
+  overflow: scroll;
+  height: 300px;
+}
+
+.home-image {
+  height: 250px;
+  width: 850px;
+  margin-top: 150px;
+}

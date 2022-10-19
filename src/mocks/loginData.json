@@ -1,0 +1,35 @@
+[
+    {
+      "className": "navs__primary",
+      "href": "/",
+      "id": 1,
+      "onLoggedIn": true,
+      "onLoggedOut": true,
+      "text": "Home"
+    },
+    {
+      "className": "navs__secondary",
+      "href": "/practice",
+      "id": 3,
+      "onLoggedIn": true,
+      "onLoggedOut": true,
+      "text": "Practice"
+    },
+    {
+      "className": "navs__secondary",
+      "href": "/profile",
+      "id": 4,
+      "onLoggedIn": true,
+      "onLoggedOut": false,
+      "text": "Profile"
+    },
+    {
+      "className": "navs__secondary",
+      "href": "/logout",
+      "id": 5,
+      "onLoggedIn": true,
+      "onLoggedOut": false,
+      "text": "Log Out"
+    }
+  ]
+  

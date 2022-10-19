@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import data from './mocks/loginData.json';
+import Login from './components/login';
+// import Logout from './components/logout';
+import Message from './components/loginMessage';
+import Nav from './sectioning/header'
+// import Nav from './components/nav';
+import Main from './sectioning/main'
+import './style.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [message, setMessage] = useState(false);
+  const [nav, setNav] = useState(false);
+
+  const handleLogIn = (e, name, password) => {
+    e.preventDefault();
+    if (name == '' || password == '') {
+      setMessage(true);
+      console.log('need more info')
+    } else {
+      setIsLoggedIn(true);
+    }
+  };
+
+
+  if (!isLoggedIn) {
+    return (
+      <div>
+        <Login handleSubmit={handleLogIn} />
+        {message && <Message />}
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        <Nav data={data} />
+        <Main setIsLoggedIn={setIsLoggedIn}/>
+        {/* <Logout setIsLoggedIn={setIsLoggedIn} /> */}
+      </div>
+    );
+  }
 }
 
-export default App;
+{/* <form onSubmit={handleLogOut}>
+  <button type="submit" className="login-button">
+    Logout
+  </button>
+</form> */}

@@ -1,0 +1,96 @@
+
+.practice-top-half {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+}
+.practice-text-container {
+  background-image: linear-gradient(to right,rgb(179, 181, 230), transparent);
+  margin-bottom: 20px;
+}
+
+.instructions-text-container {
+  margin-left: 30px;
+}
+
+.practice-screen {
+  display: flex;
+  flex-direction: column;
+}
+
+.practiceBtn {
+  border: lavender 3px solid;
+  background-color: rgb(88, 92, 155);
+  border-radius: 50px;
+  color: white;
+  padding: 15px;
+  margin: 10px 40px ;
+  cursor: pointer;
+  max-width: 150px;
+}
+
+.test-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  width: 25%;
+  align-items: center;
+}
+
+.test-field {
+  padding: 5px;
+  margin: 0 10px;
+}
+
+.practice-image {
+  height: 200px;
+  width: 250px;
+  margin-left: 150px;
+  margin-top: 15px;
+}
+
+.instructions {
+  margin-left: 30px;
+}
+
+.main-question-container {
+  border: 4px solid rgb(88, 92, 155);
+  border-radius: 10px;
+  min-width: fit-content;
+  max-width: 30%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+.question-container {
+  background-color: rgb(88, 92, 155);
+  padding: 30px;
+  min-width: 25%;
+  align-items: center;
+  width: 40%;
+}
+
+.question-text {
+  color: white;
+}
+
+.answers-container {
+  padding: 50px;
+  min-width: 50%;
+  margin-left: 8px;
+  overflow: auto;
+} 
+
+.option-text {
+  padding: 5px;
+  margin: 20px 0px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.option-text:hover {
+  background-color: rgb(179, 181, 230);
+}
