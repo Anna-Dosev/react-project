@@ -3,7 +3,7 @@
 
 const Universities = () => {
     return (
-      <div>
+      <div className="uni-container">
         <h2>Top Universities in the U.S.</h2>
         <ol>
           <li>Massachusetts Institute of Technology</li>

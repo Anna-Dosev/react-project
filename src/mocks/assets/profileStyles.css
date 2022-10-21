@@ -1,51 +1,88 @@
-.profile-text-container {
-    margin-left: 50px;
-    margin-top: 150px;
-    max-width: 45%;
-  }
-
 .profile-screen {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-text-container {
+    margin-top: 150px;
+    width: 50%;
+    background-image: linear-gradient(to right,rgb(179, 181, 230), transparent);
   }
 
-.profile-info-container {
-    border: 1px dotted purple;
-    display: flex;
-    flex-direction: row;
-}
- 
-.headshot {
-    border: 1px solid purple;
-    height: 150px;
-    width: 450px;
-    padding: 0 10px;
-    margin-right: 20px;
-    max-width: 25%;
+.indent {
+  margin-left: 30px;
 }
 
-.profile-info {
-    border: 2px solid purple;
-    padding: 0 10px;
-    width: 90%;
-}
-
-.txt {
+.input {
   max-width: 50%;
   margin: 0;
   font-weight: lighter;
 }
-.profile-sample-text {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 150px;
-    padding: 0 20px;
-    max-width: 35%;
-    border: 2px solid lavender;
-  }
 
-.profile-image {
-    height: 250px;
-    width: 850px;
-    margin-top: 150px;
+.field {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 100%;
+}
+
+.save-btn{ 
+    border: lavender 3px solid;
+    background-color: rgb(88, 92, 155);
+    border-radius: 50px;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    width: 15%;
+}
+
+.list-text-container {
+  margin-top: 150px;
+  padding: 0 10px;
+  width: 40%;
+}
+
+.main-list-container {
+  border: 6px solid rgb(88, 92, 155);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;  
+  overflow: scroll;
+  height: 200px;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.list-item {
+  padding: 2px;
+  width: 60%;
+}
+
+.add-field {  
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.add-input {
+  width: 100%;
+  max-width: 50%;
+  font-weight: lighter;
+}
+
+.add-item-btn {
+  border: lavender 3px solid;
+  background-color: rgb(88, 92, 155);
+  border-radius: 50px;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  width: 25%;
+  margin-left: 10px;
 }

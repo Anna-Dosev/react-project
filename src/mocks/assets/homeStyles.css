@@ -1,31 +1,36 @@
-.home-text-container {
-  margin-left: 50px;
-  margin-top: 150px;
-  max-width: 45%;
-}
-
 .home-screen {
   display: flex;
   flex-direction: row;
 }
 
-.benchmark {
+.home-text-container {
+  margin-left: 30px;
+  margin-top: 150px;
+  max-width: 45%;
+  
+}
+
+.bold-text {
   margin: 10px 15px;
   font-weight: bold;
   margin-top: 50px;
 }
 
-.home-btns {
+.word-btn {
   border: lavender 3px solid;
   background-color: rgb(88, 92, 155);
   border-radius: 50px;
   color: white;
   padding: 20px;
-  margin: 20px 0;
   cursor: pointer;
+  min-width: 25%;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
-.sample-text {
+
+.uni-container {
   margin-left: auto;
   margin-right: auto;
   margin-top: 150px;
@@ -37,8 +42,26 @@
   height: 300px;
 }
 
+.word-text {
+  color: black;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  margin-left: 30px;
+}
+
+.meaning-text {
+  margin-left: 30px;
+}
+
+
+.usage-text {
+  font-style: italic;
+  margin-left: 30px;
+}
+
 .home-image {
   height: 250px;
   width: 850px;
-  margin-top: 150px;
+  margin-top: 80px;
 }
+

@@ -34,9 +34,7 @@ const getWordQuiz = async() => {
 
   dispatch(addQuestions(quizResults))
 
-  let resultsToDisplay = quizResults.quiz
-
-  console.log(apiUrl)
+  // let resultsToDisplay = quizResults.quiz
 
 }
   return (
@@ -80,7 +78,12 @@ const getWordQuiz = async() => {
             <img className="practice-image" src="https://as1.ftcdn.net/v2/jpg/03/08/39/90/1000_F_308399062_pxdgweXVxocmqA617fhcmhfl1mbQZ4EF.jpg"></img>
           </div>
         </div>
-        <Quiz1/>
+        <div className="grid-container">
+          <Quiz1/>
+        </div>
+        <footer>
+          <img className="home-image" src="https://as2.ftcdn.net/v2/jpg/02/87/59/67/1000_F_287596718_0Y53hkbfo5wTYUg31Ogdqs93YRA1QDpG.jpg"/>
+        </footer>
       </div>
 
   );
