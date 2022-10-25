@@ -1,23 +1,24 @@
-import React  from 'react';
-import { useSelector, useDispatch } from 'react-redux'
-import { addProfile, selectProfile } from './profileSlice'
-import ToDo from './toDo'
+import React, { useState }  from 'react';
+import { useDispatch } from 'react-redux'
+import { addProfile } from './profileSlice'
+import ToDo from './toDoList/toDo'
 import '../../mocks/assets/profileStyles.css'
 
 const Profile = () => {
+  const [fields, setFields] = useState({});
   const dispatch = useDispatch();
-  const profile = useSelector(selectProfile); //profile from the store 
-
-  const _profile = {
-    name: 'Anna',
-    gradYear: 2020,
-    gpa: 4.0,
-    dreamSchool: 'UF'
-  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addProfile(_profile))
+    dispatch(addProfile(fields))
+  }
+
+  const handleChange = (e) => {
+    const value = e.target.value;
+    const id = e.target.id;
+    const _fields = {...fields} //copy of what is already in fields
+    _fields[id] = value //value is manipulating the copy
+    setFields(_fields);
   }
 
   return (
@@ -30,19 +31,15 @@ const Profile = () => {
               <form onSubmit={handleSubmit} className="profile-info">
                 <div className="field">
                   <label>Name:</label>
-                  <input className="input"/>
+                  <input value={fields.name || ''} onChange={handleChange} id="name" className="input"/>
                 </div>
-                <div className="field">
-                  <label>Graduation Year</label>
-                  <input className="input"/>
-                  </div>
                 <div className="field"> 
                   <label>GPA</label>
-                  <input className="input"/>
+                  <input value={fields.gpa || ''} onChange={handleChange} id="gpa" className="input"/>
                   </div>
                 <div className="field">
                   <label>Dream School</label>
-                  <input className="input"/>
+                  <input value={fields.school || ''} onChange={handleChange} id="school" className="input"/>
                 </div>
                 <button className="save-btn">Save</button>
               </form>

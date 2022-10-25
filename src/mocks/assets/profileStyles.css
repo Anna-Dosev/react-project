@@ -33,7 +33,7 @@
     color: white;
     padding: 15px;
     cursor: pointer;
-    width: 15%;
+    min-width: 15%;
 }
 
 .list-text-container {
@@ -83,6 +83,6 @@
   color: white;
   padding: 15px;
   cursor: pointer;
-  width: 25%;
+  min-width: 25%;
   margin-left: 10px;
 }

@@ -22,14 +22,8 @@
       "onLoggedIn": true,
       "onLoggedOut": false,
       "text": "Profile"
-    },
-    {
-      "className": "navs__secondary",
-      "href": "/logout",
-      "id": 5,
-      "onLoggedIn": true,
-      "onLoggedOut": false,
-      "text": "Log Out"
     }
   ]
+  
+
   
