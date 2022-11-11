@@ -4,7 +4,6 @@ import Login from './components/login';
 // import Logout from './components/logout';
 import Message from './components/loginMessage';
 import Nav from './sectioning/header'
-// import Nav from './components/nav';
 import Main from './sectioning/main'
 import './style.css';
 

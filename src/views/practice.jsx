@@ -1,7 +1,9 @@
 import React, { useState} from 'react';
-import Quiz1 from '../components/quiz1'
+import Quiz1 from '../components/quiz1';
+import image1 from '../mocks/assets/image1.jpg'
+import image3 from '../mocks/assets/image3.jpg'
 import { useDispatch, useSelector } from 'react-redux';
-import {addQuestions} from '../features/generic/genericSlice'
+import {addQuestions} from '../features/generic/genericSlice';
 import '../mocks/assets/practiceStyles.css'
 
 
@@ -75,14 +77,14 @@ const getWordQuiz = async() => {
             </div>
           </div>
           <div>
-            <img className="practice-image" src="https://as1.ftcdn.net/v2/jpg/03/08/39/90/1000_F_308399062_pxdgweXVxocmqA617fhcmhfl1mbQZ4EF.jpg"></img>
+            <img className="practice-image" src={image1}/>
           </div>
         </div>
         <div className="grid-container">
           <Quiz1/>
         </div>
         <footer>
-          <img className="home-image" src="https://as2.ftcdn.net/v2/jpg/02/87/59/67/1000_F_287596718_0Y53hkbfo5wTYUg31Ogdqs93YRA1QDpG.jpg"/>
+          <img className="home-image" src={image3}/>
         </footer>
       </div>
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import Words from '../components/words'
 import Universities from '../components/universities'
+import image3 from '../mocks/assets/image3.jpg'
 import '../mocks/assets/homeStyles.css'
 
 const Home = () => {
@@ -22,7 +23,7 @@ const Home = () => {
           <Universities/>
         </div>
         <footer>
-          <img className="home-image" src="https://as2.ftcdn.net/v2/jpg/02/87/59/67/1000_F_287596718_0Y53hkbfo5wTYUg31Ogdqs93YRA1QDpG.jpg"/>
+          <img className="home-image" src={image3}/>
         </footer>
       </div>
   );

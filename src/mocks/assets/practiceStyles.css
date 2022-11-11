@@ -44,8 +44,8 @@
 }
 
 .practice-image {
-  height: 200px;
-  width: 250px;
+  height: 300px;
+  width: 380px;
   margin-left: 150px;
   margin-top: 15px;
 }
@@ -92,6 +92,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  font-size: 1.15rem;
 }
 
 .option-text:hover {

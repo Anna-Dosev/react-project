@@ -1,6 +1,7 @@
 import React, { useState }  from 'react';
 import { useDispatch } from 'react-redux'
 import { addProfile } from './profileSlice'
+import image3 from '../../mocks/assets/image3.jpg'
 import ToDo from './toDoList/toDo'
 import '../../mocks/assets/profileStyles.css'
 
@@ -49,7 +50,7 @@ const Profile = () => {
           <ToDo/>
       </div>
       <footer>
-        <img className="home-image" src="https://as2.ftcdn.net/v2/jpg/02/87/59/67/1000_F_287596718_0Y53hkbfo5wTYUg31Ogdqs93YRA1QDpG.jpg"/>
+        <img className="home-image" src={image3}/>
       </footer>
     </div>
   );

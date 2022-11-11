@@ -21,6 +21,7 @@ export default profileSlice.reducer
 
 //reducer is the func that modifies state
 //actions is built in method, not same as action in action.payload
+//if initial state is an {} or [], use spread (...state)
 
 
 // export const profileSlice = createSlice({
